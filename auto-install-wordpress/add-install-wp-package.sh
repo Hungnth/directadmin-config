@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Install WP-CLI
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+chmod +x wp-cli.phar
+sudo mv wp-cli.phar /usr/local/bin/wp
+
 rm -rf /usr/local/directadmin/data/admin/custom_package_items.conf
 rm -rf /usr/local/directadmin/data/admin/custom_domain_items.conf
 rm -rf /usr/local/directadmin/scripts/custom/user_create_post.sh
@@ -7,6 +12,8 @@ rm -rf /usr/local/directadmin/scripts/custom/domain_create_post.sh
 rm -rf /usr/local/directadmin/scripts/custom/domain_modify_post.sh
 rm -rf /usr/local/directadmin/scripts/custom/subdomain_create_post.sh
 cd /usr/local/directadmin/data/admin
+
+# Add custom package
 wget --no-check-certificate "https://raw.githubusercontent.com/Hungnth/directadmin-config/main/auto-install-wordpress/custom_package_items.conf" -O custom_package_items.conf
 chown diradmin. custom_package_items.conf
 chmod 700 custom_package_items.conf

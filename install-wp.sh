@@ -31,7 +31,7 @@ echo "FLUSH PRIVILEGES;" | mysql -uda_admin -p$(cat /usr/local/directadmin/conf/
 
 # Download Wordpress
 cd /home/$da_username/domains/$domain/public_html/
-su -s /bin/bash -c "${WP_CLI_PATH} core download" $da_username
+su -s /bin/bash -c "${WP_CLI_PATH} core download --locale=vi_VN" $da_username
 
 # Set Database details in the config file
 su -s /bin/bash -c "${WP_CLI_PATH} config create --dbname=${dbname} --dbuser=${dbuser} --dbpass=$dbpass --dbhost=localhost" $da_username
