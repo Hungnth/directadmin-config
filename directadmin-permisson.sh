@@ -1,3 +1,5 @@
+#!/bin/bash
+
 chmod 700 /usr/local/directadmin/custombuild/
 chmod 711 /usr/local/directadmin/data/
 chmod 711 /usr/local/directadmin/plugins/
