@@ -78,8 +78,8 @@ su -s /bin/bash -c "${WP_CLI_PATH} theme install 'https://d3cav5r4mkyokm.cloudfr
 su -s /bin/bash -c "${WP_CLI_PATH} theme delete twentytwentyfour" $username #
 
 # Options
-su -s /bin/bash -c "${WP_CLI_PATH} language core install vi" $username
-su -s /bin/bash -c "${WP_CLI_PATH} site switch-language vi" $username
+su -s /bin/bash -c "${WP_CLI_PATH} language core install vi_VN" $username
+su -s /bin/bash -c "${WP_CLI_PATH} site switch-language vi_VN" $username
 su -s /bin/bash -c "${WP_CLI_PATH} option update timezone_string 'Asia/Ho_Chi_Minh'" $username
 su -s /bin/bash -c "${WP_CLI_PATH} option update time_format 'H:i'" $username
 su -s /bin/bash -c "${WP_CLI_PATH} option update date_format 'd/m/Y'" $username
