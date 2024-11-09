@@ -64,34 +64,34 @@ su -s /bin/bash -c "${WP_CLI_PATH} plugin delete hello" $da_username
 su -s /bin/bash -c "${WP_CLI_PATH} plugin delete akismet" $da_username
 
 # Install Theme, add flag '--active' to active plugin after install
-echo "Install theme Flatsome"
-su -s /bin/bash -c "${WP_CLI_PATH} theme install 'https://' --activate" $da_username # Flatsome
-su -s /bin/bash -c "${WP_CLI_PATH} theme delete twentytwentyfour" $da_username #
+# echo "Install theme Flatsome"
+# su -s /bin/bash -c "${WP_CLI_PATH} theme install 'https://' --activate" $da_username # Flatsome
+# su -s /bin/bash -c "${WP_CLI_PATH} theme delete twentytwentyfour" $da_username #
 
 # Install Plugins, add flag '--active' to active plugin after install
-echo "Install plugin Rank Math SEO Free"
-su -s /bin/bash -c "${WP_CLI_PATH} plugin install seo-by-rank-math" $da_username # Rank Math SEO
-echo "Install plugin Rank Math SEO Pro"
-su -s /bin/bash -c "${WP_CLI_PATH} plugin install 'https://'" $da_username # Rank Math SEO Pro
+# echo "Install plugin Rank Math SEO Free"
+# su -s /bin/bash -c "${WP_CLI_PATH} plugin install seo-by-rank-math" $da_username # Rank Math SEO
+# echo "Install plugin Rank Math SEO Pro"
+# su -s /bin/bash -c "${WP_CLI_PATH} plugin install 'https://'" $da_username # Rank Math SEO Pro
 
 # Options
-su -s /bin/bash -c "${WP_CLI_PATH} language core install vi" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} site switch-language vi" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update timezone_string 'Asia/Ho_Chi_Minh'" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update time_format 'H:i'" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update date_format 'd/m/Y'" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update large_size_w 0" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update large_size_h 0" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update medium_large_size_w 0" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update medium_large_size_h 0" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update medium_size_w 0" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update medium_size_h 0" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update thumbnail_size_w 0" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update thumbnail_size_h 0" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update thumbnail_crop 0" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update comment_moderation 1" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update default_pingback_flag 0" $da_username
-su -s /bin/bash -c "${WP_CLI_PATH} option update default_ping_status closed" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} language core install vi" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} site switch-language vi" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update timezone_string 'Asia/Ho_Chi_Minh'" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update time_format 'H:i'" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update date_format 'd/m/Y'" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update large_size_w 0" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update large_size_h 0" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update medium_large_size_w 0" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update medium_large_size_h 0" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update medium_size_w 0" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update medium_size_h 0" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update thumbnail_size_w 0" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update thumbnail_size_h 0" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update thumbnail_crop 0" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update comment_moderation 1" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update default_pingback_flag 0" $da_username
+# su -s /bin/bash -c "${WP_CLI_PATH} option update default_ping_status closed" $da_username
 
 # Create .htaccess
 cat << EOF > /home/$da_username/domains/$domain/public_html/.htaccess
