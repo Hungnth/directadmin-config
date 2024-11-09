@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Ask the user to enter variables
 read -p "Enter DirectAdmin username (e.g., admin | user_1): " da_username
 read -p "Enter domain (e.g., domain.com): " domain

@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # CHECK CUSTOM PKG ITEM INSTALLWP
 if [[ $installWP != 'ON' ]]; then
   exit 0;
