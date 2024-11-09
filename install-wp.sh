@@ -116,8 +116,13 @@ find . -type f -exec chmod 0644 {} \;
 chmod 400 /home/$da_username/domains/$domain/public_html/.wp-details.txt
 chmod 400 /home/$da_username/domains/$domain/public_html/wp-config.php
 
-printf -- "\n\n--------------------------------------------------"
-printf "\n\nWORDPRESS LOGIN CREDENTIALS:\nURL: https://$domain/wp-admin/\nUSERNAME: $wpadmin\nPASSWORD: $wpadminpass\n\n"
-printf -- "--------------------------------------------------\n\n"
+echo "--------------------------------------------------"
+echo """
+WORDPRESS LOGIN CREDENTIALS:
+URL: https://$domain/wp-admin/
+USERNAME: $wpadmin
+PASSWORD: $wpadminpass
+"""
+echo "--------------------------------------------------"
 
 exit 0;
